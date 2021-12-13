@@ -16,7 +16,7 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="container">
+		<div class="container header__container">
 			<nav class="header__navigation">
 				<ul class="header__navigation-list">
 					<li><img width="154" height="64" src="img/icon/Logo.png" alt=""></li>
@@ -25,34 +25,40 @@
 					<li><a href="">О Компании</a></li>
 				</ul>
 				<ul class="header__navigation-second-list">
-					<li><a href=""><img src="img/icon/serch.png" alt=""></a></li>
-					<li><a href=""><img src="img/icon/login.png" alt=""></a></li>
-					<li><a href=""><img src="img/icon/cart.png" alt=""></a></li>
+					<li><a class="serch-icon" href=""><img width="17" height="17" src="img/icon/serch.png" alt=""></a></li>
+					<li><a href=""><img width="21" height="19" src="img/icon/login.png" alt=""> Вход</a></li>
+					<li><a href=""><img width="21" height="20" src="img/icon/cart.png" alt=""> Пусто</a></li>
 				</ul>
 				<div class="header__burger"><span></span></div>
 			</nav>
-			<p>С 10 до 20, ежедневно</p>
-			<a href="tel:+88124502525">8 812 450-25-25</a>
+			<div class="header__info">
+				<p>С 10 до 20, ежедневно</p>
+				<a href="tel:+88124502525">8 812 450-25-25</a>
+			</div>
 		</div>
 	</header>
 	<main>
 		<section class="news">
 			<div class="container">
 				<div class="news__slider">
-					<h1></h1>
-					<a class="btn" href="#">Давайте оба!</a>
+					<img src="img/icecream.png" alt="">
+					<div class="news__info">
+						<h1>Крем-брюле и пломбир <br>
+							с малиновым джемом</h1>
+						<a class="btn" href="#">Давайте оба!</a>
+					</div>
 				</div>
 			</div>	
 		</section>
 		<section class="promotion">
 			<div class="container promotion__wrapper">
-				<div class="promotion__block">
+				<div class="promotion__block red">
 					<h3>Малинка даром!</h3>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
 					</p>
 					<a class="btn" href="#">Хочу варенье!</a>
 				</div>
-				<div class="promotion__block">
+				<div class="promotion__block brown">
 					<h3>Шоколадки даром!</h3>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
 					</p>
