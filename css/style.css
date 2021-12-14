@@ -8,8 +8,14 @@ h1,h2,h3,h4,h5,h6,p,li,ul,ol,img,a,input{
 	margin: 0;
 	padding: 0;
 }
+
+img{
+	display: block;
+}
+
 a{
 	color: inherit;
+	text-decoration-color:rgba(255, 255, 255, 0.336);
 }
 li{
 	list-style: none;	
@@ -38,13 +44,18 @@ p{
 	background: linear-gradient(356deg, rgba(236,87,59,1) 17%, rgba(232,77,55,1) 50%, rgba(242,104,67,1) 92%);
 	box-shadow: 4px 4px 16px -4px rgba(171, 89, 72, 1);
 	border-radius: 50px;
-	padding: 15px 5px;
+
+	padding: 10px 15px;
+
+	text-shadow: 1px 1px 4px #8d1b0a;
 	text-decoration: none;
 	text-align: center;
+	font-weight: 600;
 }
 /* ----------- Header ------------- */
 .header__container{
 	position: relative;
+	z-index: 11;
 }
 .page-header{
 	padding-top: 10px;
@@ -121,7 +132,10 @@ p{
     bottom: 118px;
 }
 .news__info .btn{
+	font-size: 32px;
+	line-height: 44px;
 	
+	padding: 14px 35px;
 }
 .news__info h1{
 	font-size: 60px;
@@ -131,19 +145,114 @@ p{
 
 /* -------- Promotion Section -------*/
 .promotion{
-	
+	position: relative;
+	z-index: 50;
+	margin-top: -40px;
 }
 .promotion__wrapper{
 	display: flex;
 	justify-content: space-between;
+	column-gap: 26px;
 }
-
 .promotion__block.red{
 	background-image: url(../img/bg1.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 }
-
 .promotion__block.brown{
 	background-image: url(../img/bg2.png);
 	background-repeat: no-repeat;
+	background-size: cover;
+}
+.promotion__block{
+	display: flex;
+    flex-direction: column;
+	flex-basis: 540px;
+	flex-grow: 0;
+
+	padding: 20px;
+	border-radius: 10px;
+}
+.promotion__block h3{
+	font-size: 35px;
+	line-height: 41px;
+
+	margin-bottom: 10px;
+}
+.promotion__block p{
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+.promotion__block .btn{
+	align-self: flex-end;
+}
+
+/* ----------- Shop Section ----------- */
+.shop{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.shop__wrapper{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.shop__item{
+	flex-basis: 23%;
+	position: relative;
+}
+
+.shop__item::before{
+	content: url(../img/icon/hit.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.shop__item__price{
+	position: absolute;
+	bottom: 55px;
+	left: 0;
+}
+
+.shop__item__price .price-sum,
+.shop__item__price span{
+	line-height: 45px;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.shop__item__price .price-sum{
+	font-size: 45px;
+}
+.shop__item__price span{
+	font-size: 30px;
+}
+.shop__item a{
+	display: block;
+    text-align: center;
+
+	padding-top: 15px;
+}
+
+/* -------------------about-us Section---------- */
+.about-us{
+	padding-bottom: 40px;
+}
+.about-us .about-us__block{
+	background-image: url(../img/waffle_pattern.jpg);
+	color: #323232;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.about-us__block h4{
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.about-us__list{
+	display: flex;
 }
