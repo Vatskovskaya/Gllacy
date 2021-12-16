@@ -45,11 +45,13 @@ p{
 	box-shadow: 4px 4px 16px -4px rgba(171, 89, 72, 1);
 	border-radius: 50px;
 
-	padding: 10px 15px;
+	padding: 13px 18px;
 
+	color: #fff;
 	text-shadow: 1px 1px 4px #8d1b0a;
 	text-decoration: none;
 	text-align: center;
+	font-size: 18px;
 	font-weight: 600;
 }
 /* ----------- Header ------------- */
@@ -180,10 +182,12 @@ p{
 	margin-bottom: 10px;
 }
 .promotion__block p{
+	font-size: 18px;
 	margin-bottom: 40px;
 	font-weight: bold;
 }
 .promotion__block .btn{
+	
 	align-self: flex-end;
 }
 
@@ -251,8 +255,122 @@ p{
 .about-us__block h4{
 	font-size: 24px;
 	line-height: 30px;
+
+	margin-bottom: 20px;
 }
 
 .about-us__list{
 	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+	column-gap: 85px;
+    row-gap: 20px;
+}
+.about-us__list li{
+	flex-basis: 43%;
+	position: relative;	
+}
+.about-us__list li img{
+	position: absolute;
+	left: -55px;
+    top: -15px;
+}
+
+/* ------------ info Section ------------- */
+.info{
+	padding-bottom: 40px;
+}
+.info .container{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	column-gap: 26px;
+}
+.info article{
+	flex-basis: 50%;
+	border-radius: 10px;
+	height: 200px;
+}
+.blog{
+	background-image: url(../img/bg-strawberry.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding-left: 20px;
+
+	color: #000;
+}
+.blog p{
+	padding-top: 25px;
+	color: #323232;
+}
+.blog a{
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: underline;
+	max-width: 280px;
+}
+.mailing{
+	background-image: url(../img/mail1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	color: #5a5a5a;
+}
+.mailing form{
+	display: flex;
+}
+.mailing p{
+	padding-top: 30px;
+	margin-bottom: 32px;
+}
+
+.mailing input[type=email]{
+	width: 370px;
+	height: 45px;
+	color: #999999;
+	border:1px solid #999999;
+	padding-left: 10px;
+	border-radius: 5px;
+
+	margin-right: 10px;
+}
+
+.mailing .btn{
+	border: none;
+	display: block;
+}
+
+/* -------------Adress Section---------------- */
+.adress{
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.adress .container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.adress__block{
+	background-color: #fefefe;
+	color: #000;
+	border-radius: 10px;
+	text-align: left;
+	position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.adress__block .btn{
+	display: block;
 }
