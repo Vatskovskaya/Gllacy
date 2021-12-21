@@ -11,11 +11,7 @@ h1,h2,h3,h4,h5,h6,p,li,ul,ol,img,a,input{
 
 img{
 	display: block;
-}
-
-a{
-	color: inherit;
-	text-decoration-color:rgba(255, 255, 255, 0.336);
+	max-width: 100%;
 }
 li{
 	list-style: none;	
@@ -23,6 +19,10 @@ li{
 p{
 	font-size: 16px;
 	line-height: 22px;
+}
+a{
+	color: inherit;
+	text-decoration-color:rgba(255, 255, 255, 0.336);
 }
 a:hover,
 a:active{
@@ -265,7 +265,11 @@ a:active{
 .shop__item{
 	flex-basis: 23%;
 	position: relative;
-	padding: 5px 15px 20px;
+	padding: 5px 15px 0px;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .shop__item:hover{
 	background-color: rgba(255, 255, 255, 0.288);
@@ -308,9 +312,7 @@ a:active{
     text-align: center;
 	margin-bottom: 15px;
 }
-.shop__item .btn{
-	
-}
+
 /* -------------------about-us Section---------- */
 .about-us{
 	padding-bottom: 40px;
