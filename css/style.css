@@ -126,34 +126,15 @@ a:active{
 .header__navigation-second-list .serch-icon{
 	padding: 7px 7px;
 }
-
 .icon-hover{
 	display: none;
 }
-
 .header__navigation-second-list li:hover .icon-hover{
 	display: block;
 }
 .header__navigation-second-list li:hover .icon-default{
 	display: none;
 }
-
-
-/* 
-.serch-icon:hover,
-.login-icon:hover{
-	display: none;
-}
-.serch-icon-hover,
-.login-icon-hover{
-	display: none;
-}
-.serch-icon-hover:hover,
-.login-icon-hover:hover{
-	display: block;
-} */
-
-
 .header__info{
 	position: absolute;
     right: 0;
@@ -173,6 +154,9 @@ a:active{
 	display: none;
 }
 
+.mobile-navigation{
+	display: none;
+}
 /* News Section */
 .news{
 	position: relative;
